@@ -11,6 +11,7 @@ class Usuario {
     private $id;
     private $nombre;
     private $email;
+	private $rol;
     private $password;
     private $foto;
     private $cookie_id;
@@ -37,6 +38,14 @@ class Usuario {
 
     function getEmail() {
         return $this->email;
+    }
+	
+	public function getRol() {
+        return $this->rol;
+    }
+
+    public function setRol($rol): void {
+        $this->rol = $rol;
     }
 
     function getPassword() {
