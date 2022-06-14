@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^([a-z_]*)$ web/index.php?accion=$1 [NC,L]
+RewriteRule ^([a-z_]*)/([0-9]+)$ web/index.php?accion=$1&id=$2 [NC,L]
+RewriteRule ^([a-z_]*)/([a-z0-9]+)$ web/index.php?accion=$1&texto_busqueda=$2 [NC,L]
+RewriteRule ^([a-z_]*)/([0-9]+)/([a-z0-9]+)$ web/index.php?accion=$1&id=$2&t=$3 [NC,L]
