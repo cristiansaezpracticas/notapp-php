@@ -18,6 +18,7 @@ require '../app/modelos/UsuarioDAO.php';
 //Requires Controladores
 require '../app/controladores/ControladorNota.php';
 require '../app/controladores/ControladorUsuario.php';
+require '../app/controladores/ControladorAdministrador.php';
 
 //Enrutamiento
 $mapa = array(
@@ -34,6 +35,11 @@ $mapa = array(
     'existe_email' => array('controlador' => 'ControladorUsuario', 'metodo' => 'existe_email', 'publica' => true),
     'mis_notas' => array('controlador' => 'ControladorNota', 'metodo' => 'mis_notas', 'publica' => false),
 	'perfil' => array('controlador' => 'ControladorNota', 'metodo' => 'perfil', 'publica' => false),
+	'encuentra_notas' => array('controlador' => 'ControladorNota', 'metodo' => 'encuentra_notas', 'publica' => false),
+	'panel' => array('controlador' => 'ControladorAdministrador', 'metodo' => 'panel', 'publica' => false, 'pànel' => true),
+	'listado_usuarios' => array('controlador' => 'ControladorAdministrador', 'metodo' => 'listado_usuarios', 'publica' => false, 'admin' => true),
+    'borrar_usuario' => array('controlador' => 'ControladorAdministrador', 'metodo' => 'borrar_usuario', 'publica' => false, 'admin' => true),
+    'editar_usuario' => array('controlador' => 'ControladorAdministrador', 'metodo' => 'editar_usuario', 'publica' => false, 'admin' => true),
 );
 
 //Parseo de la ruta
