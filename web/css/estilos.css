@@ -54,11 +54,9 @@ header nav ul li a {
 	color:white;
 	text-decoration: none;
 	display: block;
-	font-size:18px;
-	padding:0 20px;
+	padding:0 15px;
 	line-height:80px;
 }
-
 
 header nav ul li a:hover {
 	color:#fff;
@@ -66,7 +64,7 @@ header nav ul li a:hover {
 
 /* Texto Inicial */
 .texto {
-	padding:200px 0;
+	margin-top: 50px;
 	text-align: center;
 	color:#fff;
 	position: relative;
@@ -80,8 +78,8 @@ header nav ul li a:hover {
 }
 
 .texto h2 {
-	font-size:40px;
-	letter-spacing: 2.5px;
+	font-size:30px;
+
 	font-weight: normal;
 }
 
@@ -136,50 +134,23 @@ header nav ul li a:hover {
     transition: 0.4s;
 }
 
-            #foto_usuario{
-                height: 60px;
-                width: 60px;
-                background-size: cover;
-                background-position: center;
-                border-radius: 50px;
-                margin-top: 10px;
-				margin-bottom: 10px;
-            }
+				#foto_usuario{
+					height: 50px;
+					width: 50px;
+					background-size: cover;
+					background-position: center;
+					border-radius: 50px;
+					margin-top: 15px;
+					margin-bottom: 10px;
+				}
 
-            #formulario_actualizar_foto{
-                display: none;
-            }
+				#formulario_actualizar_foto{
+					display: none;
+				}
 			
 a, a:link, a:visited, a:active {
     text-decoration:none;
 }
-
-/* Texto Inicial */
-.texto {
-	padding:200px 0;
-	text-align: center;
-	color:#fff;
-	position: relative;
-	font-weight: 400;
-}
-
-.texto h2, .texto p {
-	background: rgba(0,0,0,.8);
-	display:inline-block;
-	padding:10px 20px;
-}
-
-.texto h2 {
-	font-size:40px;
-	letter-spacing: 2.5px;
-	font-weight: normal;
-}
-
-.texto p {
-	font-size:20px;
-	letter-spacing: 2.5px;
-}
-
 
 footer {
   position: absolute;
@@ -201,7 +172,7 @@ footer {
 			
 
 .display-1 {
-    font-size: 5.5rem;
+    font-size: 5.2rem;
     font-weight: 300;
     line-height: 1.2;
 	color: white;
@@ -310,4 +281,24 @@ input::placeholder {
 	
 #buscador {
 	display: none;
+}
+
+            #foto_usuario_perfil{
+                height: 150px;
+                width: 150px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 50px;
+                margin-top: 10px;
+				margin-bottom: 10px;
+				text-align: center;
+            }	
+			
+.salir {
+    font-size: 30px;
+    font-weight: normal;
+    display: inline-block;
+    padding: 10px 20px;
+	background-color: #e74c3c;
+	color: white;
 }
